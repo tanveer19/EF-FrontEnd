@@ -1,0 +1,85 @@
+/* CSS Reset */
+
+/* Remove default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font sizes to a consistent baseline */
+html {
+  font-size: 16px;
+}
+
+/* Set line height for better readability */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list styles and markers */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Set box-sizing to border-box for easier sizing calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// reset ends
+
+//header styles
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  color: white;
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  li {
+    margin-right: 30px;
+  }
+}
+#app {
+  background-image: url(/images/banner-sf.jpg);
+  // display: flex;
+  // justify-content: space-evenly;
+}
