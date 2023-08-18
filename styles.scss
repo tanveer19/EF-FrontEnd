@@ -58,28 +58,69 @@ a {
 // reset ends
 
 //header styles
-
+body {
+  color: white;
+  font-family: Lato, sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
 }
 .navbar {
   display: flex;
-  color: white;
-  .menu {
-    display: flex;
-    flex-direction: column;
-  }
-  ul {
-    display: flex;
-    list-style-type: none;
-  }
-  li {
-    margin-right: 30px;
-  }
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin-right: 30px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.fa-user {
+  color: #368bff;
 }
 #app {
   background-image: url(/images/banner-sf.jpg);
+  background-size: cover;
+  height: 760px;
   // display: flex;
   // justify-content: space-evenly;
+}
+main {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+//footer
+footer {
+  background-color: #272727;
+  opacity: 0.9;
+}
+.footer-title {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.footer-details {
+  display: flex;
+  justify-content: center;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer1 {
+  position: relative;
+  margin-right: 30px;
+}
+.discount {
+  position: absolute;
+  left: 0;
+  bottom: 31px;
+  background-color: orange;
 }
