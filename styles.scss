@@ -84,7 +84,8 @@ li {
   color: #368bff;
 }
 #app {
-  background-image: url(/images/banner-sf.jpg);
+  // background-image: url(/images/banner-sf.jpg);
+  background-color: black;
   background-size: cover;
   height: 760px;
   // display: flex;
@@ -123,4 +124,42 @@ footer {
   left: 0;
   bottom: 31px;
   background-color: orange;
+}
+
+// mega menu
+.mega-menu {
+  .menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .menu-item {
+      position: relative;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: skyblue;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        min-width: 200px;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        .submenu {
+          display: block;
+        }
+      }
+    }
+  }
 }
