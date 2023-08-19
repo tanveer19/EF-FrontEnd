@@ -142,16 +142,41 @@ footer {
         text-decoration: none;
         color: #333;
       }
-
+      .platforms,
+      .prepaid-cards {
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        margin: 15px;
+      }
+      .platforms-details,
+      .prepaid-cards-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
+      }
+      .prepaid-cards-items {
+        display: grid;
+        justify-content: center;
+      }
+      .prepaid-cards-items img {
+      }
+      .platforms-item {
+        display: flex;
+        align-items: center;
+      }
+      .platforms-item img {
+        margin-right: 12px;
+      }
       .submenu {
-        display: none;
+        // display: none;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: skyblue;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 10px;
-        min-width: 200px;
+        min-width: 770px;
         border-radius: 5px;
       }
 

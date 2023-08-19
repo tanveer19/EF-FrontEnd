@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", () => {
       const submenu = item.querySelector(".submenu");
       if (submenu) {
-        submenu.style.display = "block";
+        submenu.style.display = "grid";
       }
     });
 
     item.addEventListener("mouseleave", () => {
       const submenu = item.querySelector(".submenu");
       if (submenu) {
-        submenu.style.display = "none";
+        // submenu.style.display = "none";
       }
     });
   });
