@@ -85,7 +85,7 @@ li {
   color: #368bff;
 }
 #app {
-  background-image: url(/images/banner-sf.jpg);
+  // background-image: url(/images/banner-sf.jpg);
   background-color: black;
   background-size: cover;
   height: 760px;
@@ -131,6 +131,9 @@ footer {
 .mega-menu {
   .menu-list {
     display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, black, white);
+    border-radius: 50px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -171,8 +174,8 @@ footer {
         align-items: center;
       }
       .platforms-item:hover {
-        background-color: grey;
-        opacity: 0.4;
+        background-color: #677676;
+        opacity: 0.8;
         border-radius: 25px;
       }
       .platforms-item img {
@@ -197,4 +200,13 @@ footer {
       // }
     }
   }
+}
+.search {
+  background-color: #fe7107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
