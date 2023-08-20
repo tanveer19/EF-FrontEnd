@@ -68,6 +68,7 @@ header {
   justify-content: space-between;
 }
 .navbar {
+  width: 600px;
   display: flex;
 }
 ul {
@@ -209,6 +210,7 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  margin-right: 0px;
 }
 
 /* Styles for search icon */
@@ -219,4 +221,13 @@ footer {
 /* Initially hide the input field */
 .search-input {
   display: none;
+  width: 550px;
+  height: 80px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #fe6b0b, #fd4b1a);
+}
+::placeholder {
+  color: #fefbf9;
+  padding: 30px;
+  font-weight: 700;
 }
