@@ -58,18 +58,30 @@ a {
 // reset ends
 
 //header styles
+
 body {
   color: white;
   font-family: Lato, sans-serif;
 }
-
+.logo {
+  margin: 10px 0 0 10px;
+}
 header {
   display: flex;
   justify-content: space-between;
 }
+
+.cart {
+  margin: 20px 10px 0 0;
+}
 .navbar {
   width: 600px;
   display: flex;
+}
+.menu ul:first-child {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
 }
 ul {
   display: flex;
@@ -86,19 +98,32 @@ li {
   color: #368bff;
 }
 #app {
-  // background-image: url(/images/banner-sf.jpg);
+  background-image: url(/images/banner-sf.jpg);
   background-color: black;
   background-size: cover;
   height: 760px;
-  // display: flex;
-  // justify-content: space-evenly;
 }
 main {
   color: white;
   display: flex;
   justify-content: space-around;
 }
-
+.bg-black {
+  background-color: #333a3d;
+  padding: 5px;
+  border-radius: 5px;
+}
+.bg-discount {
+  background-color: #ff5400;
+  padding: 5px;
+  border-radius: 5px;
+}
+main div:first-child {
+  margin: 100px 250px 0 0;
+}
+main div:last-child {
+  margin: 300px 250px 0 0;
+}
 //footer
 footer {
   background-color: #272727;
@@ -106,7 +131,10 @@ footer {
 }
 .footer-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  // margin-left: 150px;
+  // margin-right: 200px;
+  padding: 30px 200px 10px 150px;
   color: white;
 }
 .footer-details {
@@ -121,11 +149,14 @@ footer {
   position: relative;
   margin-right: 30px;
 }
+.footer1 img {
+  border-radius: 20px;
+}
 .discount {
   position: absolute;
   left: 0;
   bottom: 31px;
-  background-color: orange;
+  background-color: #ff5400;
 }
 
 // mega menu
@@ -133,10 +164,10 @@ footer {
   .menu-list {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to right, black, white);
+    background-image: linear-gradient(to right, #091219, #35414a);
     border-radius: 50px;
     list-style: none;
-    padding: 0;
+    padding: 5px;
     margin: 0;
 
     .menu-item {
@@ -185,20 +216,14 @@ footer {
       .submenu {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: skyblue;
+        top: 300%;
+        left: -150%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         padding: 10px;
         min-width: 770px;
         border-radius: 5px;
+        background-image: linear-gradient(to right, #2c3c42, #847764);
       }
-
-      // &:hover {
-      //   .submenu {
-      //     display: block;
-      //   }
-      // }
     }
   }
 }
@@ -210,7 +235,7 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin-right: 0px;
+  margin-right: -3px;
 }
 
 /* Styles for search icon */

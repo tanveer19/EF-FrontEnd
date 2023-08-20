@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("mouseleave", () => {
       const submenu = item.querySelector(".submenu");
       if (submenu) {
-        // submenu.style.display = "none";
+        submenu.style.display = "none";
       }
     });
   });
