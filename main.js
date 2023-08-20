@@ -18,4 +18,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  //search
+
+  const searchContainer = document.querySelector(".search-container");
+  const searchIcon = searchContainer.querySelector(".search-icon");
+  const searchInput = searchContainer.querySelector(".search-input");
+  const navbar = document.querySelector(".navbar");
+  const menuList = document.querySelector(".menu-list");
+
+  searchIcon.addEventListener("click", () => {
+    searchIcon.style.display = "none";
+    menuList.style.display = "none";
+  });
+
+  searchInput.addEventListener("blur", () => {
+    searchIcon.style.display = "block";
+  });
 });

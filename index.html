@@ -13,7 +13,9 @@
     <div id="app">
       <header>
         <div class="logo">
-          <img src="/images/EF-logo.png" alt="logo" />
+          <a href="/">
+            <img src="/images/EF-logo.png" alt="logo" />
+          </a>
         </div>
         <div class="navbar mega-menu">
           <div class="menu">
@@ -101,7 +103,15 @@
                 <i class="fa-solid fa-angle-down"></i>
               </li>
               <li class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-container">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search..."
+                  />
+                </div>
               </li>
             </ul>
           </div>

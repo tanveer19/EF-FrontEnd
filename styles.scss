@@ -210,3 +210,13 @@ footer {
   height: 80px;
   border-radius: 50%;
 }
+
+/* Styles for search icon */
+.search-icon {
+  cursor: pointer;
+}
+
+/* Initially hide the input field */
+.search-input {
+  display: none;
+}
